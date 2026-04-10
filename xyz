@@ -1,0 +1,301 @@
+<!-- ===================== FOLDER STRUCTURE =====================
+portfolio/
+│── index.html
+│── about.html
+│── achievements.html
+│── projects.html
+│── gallery.html
+│── contact.html
+│── style.css
+│── script.js
+│── assets/
+│    ├── profile.jpg
+│    ├── project1.png
+│    ├── cert1.jpg
+=============================================================== -->
+
+
+<!-- ===================== index.html ===================== -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Karuna Jha</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="achievements.html">Achievements</a>
+    <a href="projects.html">Projects</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <button onclick="toggleDarkMode()">🌙</button>
+</header>
+
+<section class="home">
+  <img src="assets/profile.jpg" alt="Profile">
+  <h2>Hello, I'm Karuna 👋</h2>
+  <p>Pharmacy student passionate about healthcare, AI, and innovation.</p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+<!-- ===================== about.html ===================== -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About Me</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>About Me</h1>
+  <nav>
+    <a href="index.html">Home</a>
+  </nav>
+</header>
+
+<section>
+  <h2>Education</h2>
+  <p>Bachelor of Pharmacy (B.Pharm)</p>
+
+  <h2>Interests</h2>
+  <p>AI in healthcare, drug research, coding</p>
+
+  <h2>Goals</h2>
+  <p>To become a skilled pharmacist with AI expertise</p>
+
+  <h2>Strengths</h2>
+  <p>Hardworking, quick learner, creative thinker</p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+<!-- ===================== achievements.html ===================== -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Achievements</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Achievements</h1>
+</header>
+
+<section>
+  <h2>Projects</h2>
+  <ul>
+    <li>AI4A Project - AI healthcare solution</li>
+    <li>Design Thinking Project</li>
+    <li>ACE Project</li>
+  </ul>
+
+  <h2>Certificates</h2>
+  <ul>
+    <li>Coursera Certification</li>
+    <li>NetAcad Certification</li>
+    <li>Yuva AI Certification</li>
+  </ul>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+<!-- ===================== projects.html ===================== -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Projects</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Projects</h1>
+</header>
+
+<section class="projects">
+  <div class="card">
+    <img src="assets/project1.png">
+    <h3>Pharmacy Finder</h3>
+    <p>Find nearby medicine stores using AI</p>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+<!-- ===================== gallery.html ===================== -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Gallery</h1>
+</header>
+
+<section class="gallery">
+  <img src="assets/cert1.jpg">
+  <img src="assets/project1.png">
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+<!-- ===================== contact.html ===================== -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Contact</h1>
+</header>
+
+<section>
+  <p>Email: your@email.com</p>
+  <p>Phone: 1234567890</p>
+  <p>LinkedIn: linkedin.com/in/yourprofile</p>
+  <p>GitHub: github.com/yourprofile</p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+<!-- ===================== style.css ===================== -->
+:root {
+  --primary: #6a11cb;
+  --secondary: #2575fc;
+  --bg: linear-gradient(135deg, #667eea, #764ba2);
+  --card-bg: rgba(255, 255, 255, 0.15);
+  --text: #ffffff;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+}
+
+header {
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(10px);
+  color: white;
+  padding: 15px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  margin: 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ffd369;
+}
+
+.home {
+  text-align: center;
+  padding: 60px;
+}
+
+.home img {
+  width: 160px;
+  border-radius: 50%;
+  border: 4px solid white;
+  box-shadow: 0 0 20px rgba(255,255,255,0.6);
+}
+
+.projects {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: var(--card-bg);
+  backdrop-filter: blur(12px);
+  padding: 15px;
+  border-radius: 15px;
+  width: 250px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 220px;
+  margin: 10px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
+}
+
+button {
+  background: linear-gradient(45deg, #ff6a00, #ee0979);
+  border: none;
+  padding: 10px 15px;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.dark-mode {
+  --bg: linear-gradient(135deg, #141e30, #243b55);
+  --text: #e0e0e0;
+  --card-bg: rgba(255,255,255,0.08);
+}
+
+function toggleDarkMode() {
+  document.body.classList.toggle("dark-mode");
+}
